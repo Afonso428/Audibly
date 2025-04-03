@@ -2,3 +2,5 @@ Flask
 PyPDF2
 gTTS
 pydub
+pdf2image
+pytesseract
