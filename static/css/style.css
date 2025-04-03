@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #1e1e2f;
+    color: white;
+    padding: 2rem;
+}
+
+.upload-form {
+    margin: 2rem auto;
+    max-width: 400px;
+}
+
+.dropzone {
+    border: 2px dashed #999;
+    padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer nav a {
+    margin: 0 10px;
+    color: #555;
+    text-decoration: none;
+}

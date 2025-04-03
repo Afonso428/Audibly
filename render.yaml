@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: audibly
+    env: python
+    buildCommand: |
+      apt-get update && apt-get install -y poppler-utils tesseract-ocr
+      pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
