@@ -40,10 +40,13 @@ def convert():
 
     return send_file(audio_path, as_attachment=True)
 
+import os  # <- this line MUST be at the top
+
 if __name__ == '__main__':
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
     os.makedirs(app.config['AUDIO_FOLDER'], exist_ok=True)
 
-   port = int(os.environ.get("PORT", 5000))
-app.run(host='0.0.0.0', port=port)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
+
 
